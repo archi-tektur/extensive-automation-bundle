@@ -1,0 +1,11 @@
+# External dependencies
+vendor
+
+#Lock is not required in Symfony Bundles
+composer.lock
+
+#PHP CSFixer cache files
+.php_cs.cache
+
+# IDE files
+.idea

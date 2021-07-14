@@ -1,0 +1,43 @@
+{
+  "name": "archi-tektur/extensive-automation-bundle",
+  "type": "symfony-bundle",
+  "description": "Convenient bridge between API data input and CQRS-like event loop",
+  "keywords": [],
+  "homepage": "https://github.com/lexik/LexikJWTAuthenticationBundle",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Oskar Barcz",
+      "email": "kontakt@archi-tektur.pl",
+      "homepage": "https://archi-tektur.pl"
+    }],
+  "require": {
+    "php": ">=7.2",
+    "symfony/framework-bundle": "^4.4|^5.1",
+    "symfony/serializer": "^5.3",
+    "symfony/serializer-pack": "^1.0",
+    "symfony/validator": "^5.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "ArchTools\\Bundle\\ExtensiveAutomationBundle\\": "src/",
+      "Tests\\ArchTools\\Bundle\\ExtensiveAutomationBundle\\": "tests/"
+    },
+    "exclude-from-classmap": [
+      "/Tests/"
+    ]
+  },
+  "extra": {
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "scripts": {
+    "test": [
+      "vendor/bin/simple-phpunit tests"
+    ]
+  },
+  "require-dev": {
+    "symfony/phpunit-bridge": "^5.3"
+  }
+}
