@@ -1,0 +1,3 @@
+services:
+  ArchTools\Bundle\ExtensiveAutomationBundle\Request\InformationSourceMerger:
+    public: true
